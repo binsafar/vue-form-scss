@@ -5,4 +5,58 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  max-height: 100vh;
+  width: 340px;
+  position: sticky;
+  top: 0;
+}
+.navbar .nav-header {
+  height: 56px;
+  background-color: rgb(43, 43, 102);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .nav-header img {
+  width: 34px;
+  height: 34px;
+  margin-right: 4px;
+}
+.navbar .nav-content {
+  max-height: calc(100vh - 110px);
+  overflow-y: scroll;
+}
+.navbar .nav-content .nav-content-header .nav-content-title {
+  padding: 12px 16px;
+}
+.navbar .nav-content .nav-content-header .nav-content-link {
+  padding: 14px 16px;
+  height: 48px;
+}
+.navbar .nav-content .nav-content-header .nav-content-link a {
+  text-decoration: none;
+  margin-left: 4px;
+}
+.navbar .nav-footer {
+  background-color: rgb(43, 43, 102);
+  text-align: right;
+}
+.navbar .nav-footer button {
+  background-color: inherit;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+.navbar .nav-footer button img {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */

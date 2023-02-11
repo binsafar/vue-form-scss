@@ -1,11 +1,24 @@
 <script setup>
 import HeaderCom from "./components/HeaderCom.vue";
 import NavigationCom from "./components/NavigationCom.vue";
+import OrgForm from "./components/OrgForm.vue";
 </script>
 
 <template>
-  <NavigationCom />
-  <HeaderCom />
+  <div class="main-container">
+    <NavigationCom />
+    <div class="main-right">
+      <HeaderCom />
+      <OrgForm />
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main-container {
+  display: flex;
+}
+.main-right {
+  width: 82%;
+}
+</style>

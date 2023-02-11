@@ -1,5 +1,6 @@
 <script setup>
 import HeaderCom from "./components/HeaderCom.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 import NavigationCom from "./components/NavigationCom.vue";
 import OrgForm from "./components/OrgForm.vue";
 </script>

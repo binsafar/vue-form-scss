@@ -108,4 +108,35 @@ button {
   cursor: pointer;
 }
 
+.form-container {
+  margin: 16px;
+  padding: 4px;
+  border: 2px solid #777;
+  border-top: 4px solid rgb(43, 43, 102);
+  border-radius: 4px;
+}
+.form-container h1 {
+  text-align: center;
+  border-bottom: 1px solid #777;
+  padding: 12px 20px;
+}
+.form-container .form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+}
+.form-container .form-wrapper label {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .form-wrapper input {
+  height: 35px;
+  padding: 4px;
+}
+.form-container .form-wrapper select {
+  height: 35px;
+  padding: 4px;
+}
+
 /*# sourceMappingURL=styles.css.map */

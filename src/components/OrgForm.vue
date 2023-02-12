@@ -137,15 +137,20 @@ const submit = () => console.log("submit");
         :values="customValues"
       />
 
-      <label for="">
+      <p>
         Yangi ta`mirlangan
-        <input type="checkbox" />
-      </label>
+        <label class="switch">
+          <input id="new-con" type="checkbox" class="new-con" />
+          <span class="slider round"></span>
+        </label>
+      </p>
     </form>
+
     <BankAcc />
-    <div>
-      <button>Orqaga</button>
-      <button @submit="submit">Saqlash</button>
+
+    <div class="buttons">
+      <button class="btn-cancel">Orqaga</button>
+      <button class="btn-submit" @submit="submit">Saqlash</button>
     </div>
   </div>
 </template>

@@ -1,0 +1,55 @@
+.bank-container {
+  margin: 0 16px;
+  padding: 20px;
+
+  .bank-module {
+    button {
+      padding: 8px 16px;
+      border: none;
+      color: #321fdb;
+      background: #fff;
+      border-radius: 8px;
+    }
+
+    .active {
+      background-color: #321fdb;
+      color: #fff;
+    }
+  }
+
+  .bank-table {
+    width: 100%;
+    background-color: #dadada;
+
+    .bank-thead {
+      .bank-tr {
+        th {
+          padding: 16px 8px;
+          margin: 1px;
+
+          .bank-tr-input {
+            width: 100%;
+            outline: none;
+            border: none;
+            height: 35px;
+            border-radius: 4px;
+            padding: 8px;
+          }
+        }
+        .btn-add {
+          border: none;
+          background: inherit;
+          border: 1px solid blue;
+          color: blue;
+          padding: 8px;
+          border-radius: 4px;
+
+          &:hover {
+            background: blue;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -25,10 +25,34 @@
     input {
       height: 35px;
       padding: 4px;
+      outline: 1px solid #777;
+    }
+    .new-con {
+      outline: none;
     }
     select {
       height: 35px;
       padding: 4px;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px 24px 16px;
+
+    button {
+      padding: 4px 8px;
+      border: none;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    .btn-cancel {
+      background-color: #e55353;
+    }
+
+    .btn-submit {
+      background-color: #2eb85c;
     }
   }
 }

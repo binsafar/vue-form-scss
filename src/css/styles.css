@@ -133,10 +133,144 @@ button {
 .form-container .form-wrapper input {
   height: 35px;
   padding: 4px;
+  outline: 1px solid #777;
+}
+.form-container .form-wrapper .new-con {
+  outline: none;
 }
 .form-container .form-wrapper select {
   height: 35px;
   padding: 4px;
+}
+.form-container .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px 24px 16px;
+}
+.form-container .buttons button {
+  padding: 4px 8px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+.form-container .buttons .btn-cancel {
+  background-color: #e55353;
+}
+.form-container .buttons .btn-submit {
+  background-color: #2eb85c;
+}
+
+.bank-container {
+  margin: 0 16px;
+  padding: 20px;
+}
+.bank-container .bank-module button {
+  padding: 8px 16px;
+  border: none;
+  color: #321fdb;
+  background: #fff;
+  border-radius: 8px;
+}
+.bank-container .bank-module .active {
+  background-color: #321fdb;
+  color: #fff;
+}
+.bank-container .bank-table {
+  width: 100%;
+  background-color: #dadada;
+}
+.bank-container .bank-table .bank-thead .bank-tr th {
+  padding: 16px 8px;
+  margin: 1px;
+}
+.bank-container .bank-table .bank-thead .bank-tr th .bank-tr-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 35px;
+  border-radius: 4px;
+  padding: 8px;
+}
+.bank-container .bank-table .bank-thead .bank-tr .btn-add {
+  border: none;
+  background: inherit;
+  border: 1px solid blue;
+  color: blue;
+  padding: 8px;
+  border-radius: 4px;
+}
+.bank-container .bank-table .bank-thead .bank-tr .btn-add:hover {
+  background: blue;
+  color: #fff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.wrapper-label .select {
+  height: 32px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

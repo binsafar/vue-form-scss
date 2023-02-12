@@ -1,8 +1,12 @@
 .navbar {
   height: 100vh;
-  width: 340px;
+  width: $nav-width;
   position: sticky;
   top: 0;
+
+  @media (width < 1120px) {
+    display: none;
+  }
 
   .nav-header {
     height: 56px;
@@ -22,7 +26,7 @@
   .nav-content {
     height: calc(100vh - 56px * 2);
     overflow-y: scroll;
-    color: $color-blue;
+    // color: $color-blue;
 
     .nav-content-header {
       .nav-content-title {
@@ -36,8 +40,10 @@
 
         &:hover {
           background-color: $color-blue;
-          color: #fff !important;
           cursor: pointer;
+          a {
+            color: #fff !important;
+          }
         }
 
         svg {
@@ -47,6 +53,7 @@
         a {
           text-decoration: none;
           margin-left: 4px;
+          width: 100%;
         }
       }
     }
@@ -54,13 +61,22 @@
 
   .nav-footer {
     background-color: $color-blue;
-    text-align: right;
+    height: 56px;
 
-    button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    #close-nav {
+      display: none;
+      // &:checked {
+      // }
+    }
+
+    label {
       background-color: inherit;
       border: none;
-      width: 50px;
-      height: 56px;
+      cursor: pointer;
 
       svg {
         fill: #fff !important;

@@ -16,6 +16,8 @@ const organization = ref({
 
     <input type="checkbox" id="check-box" />
 
+    <h1>SportERP</h1>
+
     <div class="header-info">
       <p class="header-org-title">
         <span class="header-org-span">Tashkilot:</span> {{ organization.name }}

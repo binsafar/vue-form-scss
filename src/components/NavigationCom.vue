@@ -24,9 +24,10 @@ const openNav = ref(true);
     </div>
 
     <div class="nav-footer">
-      <button @click="openNav == !openNav">
+      <input type="checkbox" id="close-nav" />
+      <label for="close-nav">
         <img src="../assets/icons/arrow-bar-left.svg" alt="left svg" />
-      </button>
+      </label>
     </div>
   </nav>
 </template>

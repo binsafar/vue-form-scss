@@ -11,13 +11,27 @@
 
   .checkbox-icon {
     display: none;
+    cursor: pointer;
+
+    @media (width < 1120px) {
+      display: inline-block;
+    }
   }
 
   #check-box {
     display: none;
   }
-
+  h1 {
+    display: none;
+    @media (width < 1120px) {
+      display: inline-block;
+    }
+  }
   .header-info {
+    @media (width < 1120px) {
+      display: none;
+    }
+
     font-weight: 400;
     .header-org-title {
     }
@@ -47,6 +61,16 @@
     }
     img {
       cursor: pointer;
+    }
+  }
+}
+
+#check-box {
+  display: none;
+
+  &:checked {
+    .navbar {
+      display: block;
     }
   }
 }

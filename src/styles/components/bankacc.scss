@@ -1,6 +1,10 @@
 .bank-container {
   margin: 0 16px;
   padding: 20px;
+  @media (width <= 510px) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
   .bank-module {
     button {
@@ -20,6 +24,7 @@
   .bank-table {
     width: 100%;
     background-color: #dadada;
+    margin: 16px 0px;
 
     .bank-thead {
       .bank-tr {

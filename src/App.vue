@@ -1,6 +1,5 @@
 <script setup>
 import HeaderCom from "./components/HeaderCom.vue";
-import HelloWorld from "./components/HelloWorld.vue";
 import NavigationCom from "./components/NavigationCom.vue";
 import OrgForm from "./components/OrgForm.vue";
 </script>
@@ -21,5 +20,10 @@ import OrgForm from "./components/OrgForm.vue";
 }
 .main-right {
   width: 82%;
+}
+@media (width < 1120px) {
+  .main-right {
+    width: 100%;
+  }
 }
 </style>
